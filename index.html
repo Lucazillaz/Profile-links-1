@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="”robots”" content="noindex" />
+  <meta name="autor da página" content="Lucas Pacheco Carvalho" />
+  <meta name="description" content="Meus perfis" />
+  <meta name="keywords" content="Github, Linkedin, Behance" />
+  <title>Profile Links 1</title>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #container {
+      background-color: hsl(0, 0%, 12%);
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      flex-direction: column;
+      /* elemento pai as divs que ficaram em coluna, uma embaixo da outra */
+      width: 25rem;
+      border-radius: 10px;
+    }
+
+    .profile {
+      margin-top: 1.25rem;
+      margin-bottom: .80rem;
+    }
+
+    .img-profile {
+      height: 5rem;
+    }
+
+    .text {
+      margin: .2rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    h3 {
+      font-size: 1rem;
+      color: greenyellow;
+    }
+
+    p {
+      font-size: 1rem;
+      color: white;
+      margin-top: .6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    button {
+      background-color: hsl(0, 0%, 20%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 5rem;
+      width: 21.875rem;
+      border-radius: .625rem;
+      border: none;
+
+    }
+
+    button:hover {
+      filter: invert(100%);
+      /* inverte as cores das letras do svg, mas também as cores de fundo*/
+      background-color: #5200D0;
+      /* esse é o oposto da cor desejada, que vai ser invertida */
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* elemntos dentro do main ficaram centralizados */
+    }
+
+    img {
+      filter: invert(100%);
+      /* inverte as cores do svg */
+    }
+
+    .div-btn {
+      margin: .625rem;
+      overflow: hidden;
+      /* Isso cortará qualquer conteúdo que ultrapasse a div, no caso a imagem svg*/
+    }
+
+    .btn-last {
+      margin-bottom: 1.5625rem;
+    }
+
+    .logo-img1 {
+      height: 6.25rem;
+      padding-right: 1.5625rem;
+    }
+
+    .logo-img2 {
+      height: 12.5rem;
+    }
+
+    .logo-img3 {
+      height: 2.8125rem;
+    }
+
+    @media (max-width: 405px) {
+      #container {
+        width: 20rem;
+      }
+      button{
+        width: 17.875rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main id="container">
+    <div class="profile">
+      <img class="img-profile" src="assets\abstract-user-flat-4.png" alt="Profile" />
+    </div>
+    <div class="text">
+      <h1>Lucas Pacheco Carvalho</h1>
+    </div>
+    <div class="text">
+      <h3>São Mateus do Maranhão, Brasil</h2>
+    </div>
+    <div class="text">
+      <p>Front-end web developer</p>
+    </div>
+    <div class="div-btn">
+      <a href="https://github.com/TheProgLucas">
+        <button>
+          <img class="logo-img1" src="assets\toppng.com-github-logo-png-download-1125x417.png" alt="Github">
+        </button>
+      </a>
+    </div>
+    <div class="div-btn">
+      <a href="https://www.linkedin.com/in/lucas-pacheco-carvalho-21495b246/">
+        <button>
+          <img class="logo-img2" src="assets\LinkedIn-Wordmark-Black-Logo.wine.svg" alt="Linkedin">
+        </button>
+      </a>
+    </div>
+    <div class="div-btn btn-last">
+      <a href="https://www.behance.net/TheProgLucas">
+        <button>
+          <img class="logo-img3" src="assets\behance-4.svg" alt="Behance">
+        </button>
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>
